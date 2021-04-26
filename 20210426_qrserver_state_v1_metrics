@@ -1,3 +1,6 @@
+qrserver port 4080
+
+
 $ vespa-model-inspect -u service qrserver | head
 qrserver @ <HOSTNAME> :
 default/container.0
