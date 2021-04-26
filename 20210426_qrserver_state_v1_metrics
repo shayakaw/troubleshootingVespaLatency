@@ -1,0 +1,1426 @@
+$ vespa-model-inspect -u service qrserver | head
+qrserver @ <HOSTNAME> :
+default/container.0
+    http://<HOSTNAME>:4080/ (STATE EXTERNAL QUERY HTTP)
+    tcp/<HOSTNAME>:19100 (MESSAGING RPC)
+    tcp/<HOSTNAME>:19101 (ADMIN RPC)
+    
+
+http://<HOSTNAME>:4080/state/v1/metrics
+
+{
+  "time" : 1619430040594,
+  "status" : {
+    "code" : "up"
+  },
+  "metrics" : {
+    "snapshot" : {
+      "from" : 1.619429979738E9,
+      "to" : 1.619430039738E9
+    },
+    "values" : [ {
+      "name" : "search_connections",
+      "values" : {
+        "average" : 6.253784238346949,
+        "sum" : 6.253784238346949,
+        "count" : 1,
+        "last" : 6.253784238346949,
+        "max" : 6.253784238346949,
+        "min" : 6.253784238346949,
+        "rate" : 0.016666666666666666
+      }
+    }, {
+      "name" : "jrt.transport.client.unencrypted-connections-established",
+      "values" : {
+        "count" : 4,
+        "rate" : 0.06666666666666667
+      }
+    }, {
+      "name" : "jdisc.http.jetty.threadpool.thread.idle",
+      "values" : {
+        "average" : 37.43333333333333,
+        "sum" : 1123.0,
+        "count" : 30,
+        "last" : 38.0,
+        "max" : 38.0,
+        "min" : 33.0,
+        "rate" : 0.5
+      }
+    }, {
+      "name" : "jdisc.http.jetty.threadpool.thread.total",
+      "values" : {
+        "average" : 50.0,
+        "sum" : 1500.0,
+        "count" : 30,
+        "last" : 50.0,
+        "max" : 50.0,
+        "min" : 50.0,
+        "rate" : 0.5
+      }
+    }, {
+      "name" : "jdisc.open_file_descriptors",
+      "values" : {
+        "average" : 506.0,
+        "sum" : 3036.0,
+        "count" : 6,
+        "last" : 506.0,
+        "max" : 507.0,
+        "min" : 505.0,
+        "rate" : 0.1
+      }
+    }, {
+      "name" : "mem.heap.total",
+      "values" : {
+        "average" : 9.882238976E9,
+        "sum" : 5.9293433856E10,
+        "count" : 6,
+        "last" : 9.882238976E9,
+        "max" : 9.882238976E9,
+        "min" : 9.882238976E9,
+        "rate" : 0.1
+      }
+    }, {
+      "name" : "jdisc.http.jetty.threadpool.thread.busy",
+      "values" : {
+        "average" : 7.566666666666666,
+        "sum" : 227.0,
+        "count" : 30,
+        "last" : 7.0,
+        "max" : 12.0,
+        "min" : 7.0,
+        "rate" : 0.5
+      }
+    }, {
+      "name" : "serverStartedMillis",
+      "values" : {
+        "average" : 2.6123E7,
+        "sum" : 7.8369E8,
+        "count" : 30,
+        "last" : 2.6152E7,
+        "max" : 2.6152E7,
+        "min" : 2.6094E7,
+        "rate" : 0.5
+      }
+    }, {
+      "name" : "chain_indexing_documents",
+      "values" : {
+        "count" : 1006,
+        "rate" : 16.766666666666666
+      }
+    }, {
+      "name" : "jdisc.deactivated_containers.total",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 6,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 0.1
+      }
+    }, {
+      "name" : "docprocessor_indexing_com_yahoo_docprocs_indexing_IndexingProcessor_indexing_documents",
+      "values" : {
+        "count" : 1006,
+        "rate" : 16.766666666666666
+      }
+    }, {
+      "name" : "jdisc.memory_mappings",
+      "values" : {
+        "average" : 4913.0,
+        "sum" : 29478.0,
+        "count" : 6,
+        "last" : 4913.0,
+        "max" : 4913.0,
+        "min" : 4913.0,
+        "rate" : 0.1
+      }
+    }, {
+      "name" : "jdisc.http.jetty.threadpool.thread.max",
+      "values" : {
+        "average" : 50.0,
+        "sum" : 1500.0,
+        "count" : 30,
+        "last" : 50.0,
+        "max" : 50.0,
+        "min" : 50.0,
+        "rate" : 0.5
+      }
+    }, {
+      "name" : "jdisc.http.jetty.threadpool.thread.reserved",
+      "values" : {
+        "average" : -1.0,
+        "sum" : -30.0,
+        "count" : 30,
+        "last" : -1.0,
+        "max" : -1.0,
+        "min" : -1.0,
+        "rate" : 0.5
+      }
+    }, {
+      "name" : "mem.heap.used",
+      "values" : {
+        "average" : 1.820264456E9,
+        "sum" : 1.0921586736E10,
+        "count" : 6,
+        "last" : 2.145961088E9,
+        "max" : 2.532919336E9,
+        "min" : 7.03990992E8,
+        "rate" : 0.1
+      }
+    }, {
+      "name" : "dispatch_internal",
+      "values" : {
+        "count" : 33768,
+        "rate" : 562.8
+      }
+    }, {
+      "name" : "jdisc.http.jetty.threadpool.thread.min",
+      "values" : {
+        "average" : 50.0,
+        "sum" : 1500.0,
+        "count" : 30,
+        "last" : 50.0,
+        "max" : 50.0,
+        "min" : 50.0,
+        "rate" : 0.5
+      }
+    }, {
+      "name" : "docprocessor_indexing_com_yahoo_docprocs_indexing_IndexingProcessor_indexing_proctime",
+      "values" : {
+        "count" : 262,
+        "rate" : 4.366666666666666
+      }
+    }, {
+      "name" : "mem.heap.free",
+      "values" : {
+        "average" : 8.06197452E9,
+        "sum" : 4.837184712E10,
+        "count" : 6,
+        "last" : 7.736277888E9,
+        "max" : 9.178247984E9,
+        "min" : 7.34931964E9,
+        "rate" : 0.1
+      }
+    }, {
+      "name" : "jdisc.http.requests.status",
+      "values" : {
+        "count" : 8,
+        "rate" : 0.13333333333333333
+      }
+    }, {
+      "name" : "jdisc.http.jetty.threadpool.queue.size",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 30,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 0.5
+      }
+    }, {
+      "name" : "serverActiveThreads",
+      "values" : {
+        "average" : 2.6766666666666667,
+        "sum" : 1606.0,
+        "count" : 600,
+        "last" : 8.0,
+        "max" : 21.0,
+        "min" : 0.0,
+        "rate" : 10.0
+      },
+      "dimensions" : {
+        "threadpool" : "search-handler"
+      }
+    }, {
+      "name" : "serverThreadPoolSize",
+      "values" : {
+        "average" : 1500.0,
+        "sum" : 900000.0,
+        "count" : 600,
+        "last" : 1500.0,
+        "max" : 1500.0,
+        "min" : 1500.0,
+        "rate" : 10.0
+      },
+      "dimensions" : {
+        "threadpool" : "search-handler"
+      }
+    }, {
+      "name" : "jdisc.thread_pool.work_queue.capacity",
+      "values" : {
+        "average" : 10.0,
+        "sum" : 6000.0,
+        "count" : 600,
+        "last" : 10.0,
+        "max" : 10.0,
+        "min" : 10.0,
+        "rate" : 10.0
+      },
+      "dimensions" : {
+        "threadpool" : "search-handler"
+      }
+    }, {
+      "name" : "jdisc.thread_pool.work_queue.size",
+      "values" : {
+        "average" : 0.03333333333333333,
+        "sum" : 20.0,
+        "count" : 600,
+        "last" : 0.0,
+        "max" : 4.0,
+        "min" : 0.0,
+        "rate" : 10.0
+      },
+      "dimensions" : {
+        "threadpool" : "search-handler"
+      }
+    }, {
+      "name" : "handled.latency",
+      "values" : {
+        "average" : 5.061694754613038,
+        "sum" : 170898.0,
+        "count" : 33763,
+        "last" : 3.0,
+        "max" : 35.0,
+        "min" : 1.0,
+        "rate" : 562.7166666666667
+      },
+      "dimensions" : {
+        "handler" : "http://*:*/search/*",
+        "handler-name" : "com.yahoo.container.jdisc.ThreadedRequestHandler$RequestTask",
+        "endpoint" : "0.0.0.0:4080",
+        "scheme" : "http",
+        "port" : "4080"
+      }
+    }, {
+      "name" : "jdisc.gc.ms",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 6,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 0.1
+      },
+      "dimensions" : {
+        "gcName" : "ConcurrentMarkSweep"
+      }
+    }, {
+      "name" : "jdisc.gc.count",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 6,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 0.1
+      },
+      "dimensions" : {
+        "gcName" : "ConcurrentMarkSweep"
+      }
+    }, {
+      "name" : "http.status.2xx",
+      "values" : {
+        "count" : 33766,
+        "rate" : 562.7666666666667
+      },
+      "dimensions" : {
+        "httpMethod" : "GET",
+        "requestType" : "read",
+        "scheme" : "http"
+      }
+    }, {
+      "name" : "http.status.4xx",
+      "values" : {
+        "count" : 0,
+        "rate" : 0.0
+      },
+      "dimensions" : {
+        "httpMethod" : "GET",
+        "requestType" : "read",
+        "scheme" : "http"
+      }
+    }, {
+      "name" : "http.status.5xx",
+      "values" : {
+        "count" : 2,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "httpMethod" : "GET",
+        "requestType" : "read",
+        "scheme" : "http"
+      }
+    }, {
+      "name" : "handled.requests",
+      "values" : {
+        "count" : 8,
+        "rate" : 0.13333333333333333
+      },
+      "dimensions" : {
+        "handler" : "http://*:*/status.html",
+        "handler-name" : "com.yahoo.container.handler.VipStatusHandler",
+        "endpoint" : "0.0.0.0:4080",
+        "scheme" : "http",
+        "port" : "4080"
+      }
+    }, {
+      "name" : "documents_processed",
+      "values" : {
+        "count" : 1006,
+        "rate" : 16.766666666666666
+      },
+      "dimensions" : {
+        "chain" : "indexing",
+        "documenttype" : "<OurProductID>"
+      }
+    }, {
+      "name" : "jdisc.gc.ms",
+      "values" : {
+        "average" : 103.16666666666667,
+        "sum" : 619.0,
+        "count" : 6,
+        "last" : 99.0,
+        "max" : 111.0,
+        "min" : 99.0,
+        "rate" : 0.1
+      },
+      "dimensions" : {
+        "gcName" : "ParNew"
+      }
+    }, {
+      "name" : "jdisc.gc.count",
+      "values" : {
+        "average" : 11.333333333333334,
+        "sum" : 68.0,
+        "count" : 6,
+        "last" : 11.0,
+        "max" : 12.0,
+        "min" : 11.0,
+        "rate" : 0.1
+      },
+      "dimensions" : {
+        "gcName" : "ParNew"
+      }
+    }, {
+      "name" : "handled.latency",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 8,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 0.13333333333333333
+      },
+      "dimensions" : {
+        "handler" : "http://*:*/status.html",
+        "handler-name" : "com.yahoo.container.jdisc.ThreadedRequestHandler$RequestTask",
+        "endpoint" : "0.0.0.0:4080",
+        "scheme" : "http",
+        "port" : "4080"
+      }
+    }, {
+      "name" : "relevance.at_10",
+      "values" : {
+        "average" : 9.510435592514215E9,
+        "sum" : 2.4086129181601503E14,
+        "count" : 25326,
+        "last" : 4270272.389054352,
+        "max" : 5.64546463194996E10,
+        "min" : 63112.1998064185,
+        "rate" : 422.1
+      },
+      "dimensions" : {
+        "rankProfile" : "<OurProductID>",
+        "chain" : "default"
+      }
+    }, {
+      "name" : "relevance.at_1",
+      "values" : {
+        "average" : 6.006001836873763E10,
+        "sum" : 1.5210800252066492E15,
+        "count" : 25326,
+        "last" : 1.9340000004634511E9,
+        "max" : 2.621440000005E11,
+        "min" : 1.4012740484106041E7,
+        "rate" : 422.1
+      },
+      "dimensions" : {
+        "rankProfile" : "<OurProductID>",
+        "chain" : "default"
+      }
+    }, {
+      "name" : "relevance.at_3",
+      "values" : {
+        "average" : 1.0130931393788528E10,
+        "sum" : 2.5657596847908825E14,
+        "count" : 25326,
+        "last" : 1.703854048250599E7,
+        "max" : 5.936960245149998E10,
+        "min" : 179172.00070854812,
+        "rate" : 422.1
+      },
+      "dimensions" : {
+        "rankProfile" : "<OurProductID>",
+        "chain" : "default"
+      }
+    }, {
+      "name" : "query_latency",
+      "values" : {
+        "average" : 3.2836894044953806,
+        "sum" : 110883.62381100001,
+        "count" : 33768,
+        "last" : 2.698966,
+        "max" : 34.373455,
+        "min" : 0.994622,
+        "rate" : 562.8,
+        "95percentile" : 4.62109375,
+        "99percentile" : 17.12109375
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "documents_covered",
+      "values" : {
+        "count" : 2675648592723,
+        "rate" : 4.459414321205E10
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "query_hit_offset",
+      "values" : {
+        "average" : 12.0,
+        "sum" : 405216.0,
+        "count" : 33768,
+        "last" : 12.0,
+        "max" : 12.0,
+        "min" : 12.0,
+        "rate" : 562.8
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "documents_total",
+      "values" : {
+        "count" : 2675862525743,
+        "rate" : 4.459770876238333E10
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "failed_queries",
+      "values" : {
+        "count" : 9,
+        "rate" : 0.15
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "empty_results",
+      "values" : {
+        "count" : 8442,
+        "rate" : 140.7
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "max_query_latency",
+      "values" : {
+        "average" : 3.2836894044953806,
+        "sum" : 110883.62381100001,
+        "count" : 33768,
+        "last" : 2.698966,
+        "max" : 34.373455,
+        "min" : 0.994622,
+        "rate" : 562.8
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "peak_qps",
+      "values" : {
+        "average" : 562.709705539394,
+        "sum" : 33762.58233236364,
+        "count" : 60,
+        "last" : 560.0,
+        "max" : 616.0,
+        "min" : 488.0,
+        "rate" : 1.0
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "totalhits_per_query",
+      "values" : {
+        "average" : 222.30522980336414,
+        "sum" : 7506803.0,
+        "count" : 33768,
+        "last" : 145.0,
+        "max" : 545.0,
+        "min" : 0.0,
+        "rate" : 562.8,
+        "95percentile" : 547.0,
+        "99percentile" : 547.0
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "hits_per_query",
+      "values" : {
+        "average" : 9.0,
+        "sum" : 303912.0,
+        "count" : 33768,
+        "last" : 12.0,
+        "max" : 12.0,
+        "min" : 0.0,
+        "rate" : 562.8,
+        "95percentile" : 12.0,
+        "99percentile" : 12.0
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "queries",
+      "values" : {
+        "count" : 33768,
+        "rate" : 562.8
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "mean_query_latency",
+      "values" : {
+        "average" : 3.2836894044953806,
+        "sum" : 110883.62381100001,
+        "count" : 33768,
+        "last" : 2.698966,
+        "max" : 34.373455,
+        "min" : 0.994622,
+        "rate" : 562.8
+      },
+      "dimensions" : {
+        "chain" : "default"
+      }
+    }, {
+      "name" : "error.timeout",
+      "values" : {
+        "count" : 9,
+        "rate" : 0.15
+      },
+      "dimensions" : {
+        "source" : "<OurProductID>"
+      }
+    }, {
+      "name" : "serverNumRequests",
+      "values" : {
+        "count" : 2,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.filtering.response.unhandled",
+      "values" : {
+        "count" : 2,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverTimeToFirstByte",
+      "values" : {
+        "average" : 1.0,
+        "sum" : 2.0,
+        "count" : 2,
+        "last" : 1.0,
+        "max" : 1.0,
+        "min" : 1.0,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverBytesSent",
+      "values" : {
+        "average" : 36036.5,
+        "sum" : 72073.0,
+        "count" : 2,
+        "last" : 36355.0,
+        "max" : 36355.0,
+        "min" : 35718.0,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumSuccessfulResponseWrites",
+      "values" : {
+        "count" : 2,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.filtering.request.unhandled",
+      "values" : {
+        "count" : 2,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.request.uri_length",
+      "values" : {
+        "average" : 17.0,
+        "sum" : 34.0,
+        "count" : 2,
+        "last" : 17.0,
+        "max" : 17.0,
+        "min" : 17.0,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.requests",
+      "values" : {
+        "count" : 2,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverTotalSuccessfulResponseLatency",
+      "values" : {
+        "average" : 1.0,
+        "sum" : 2.0,
+        "count" : 2,
+        "last" : 1.0,
+        "max" : 1.0,
+        "min" : 1.0,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.request.content_size",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 2,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumSuccessfulResponses",
+      "values" : {
+        "count" : 2,
+        "rate" : 0.03333333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "localhost",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumRequests",
+      "values" : {
+        "count" : 1,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.filtering.response.unhandled",
+      "values" : {
+        "count" : 1,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.filtering.request.unhandled",
+      "values" : {
+        "count" : 1,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.request.uri_length",
+      "values" : {
+        "average" : 17.0,
+        "sum" : 17.0,
+        "count" : 1,
+        "last" : 17.0,
+        "max" : 17.0,
+        "min" : 17.0,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumFailedResponses",
+      "values" : {
+        "count" : 0,
+        "rate" : 0.0
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverTimeToFirstByte",
+      "values" : {
+        "average" : 1.0,
+        "sum" : 1.0,
+        "count" : 1,
+        "last" : 1.0,
+        "max" : 1.0,
+        "min" : 1.0,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverBytesSent",
+      "values" : {
+        "average" : 36183.0,
+        "sum" : 36183.0,
+        "count" : 1,
+        "last" : 36183.0,
+        "max" : 36183.0,
+        "min" : 36183.0,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumSuccessfulResponseWrites",
+      "values" : {
+        "count" : 1,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverTotalFailedResponseLatency",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 0,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 0.0
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.requests",
+      "values" : {
+        "count" : 1,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverTotalSuccessfulResponseLatency",
+      "values" : {
+        "average" : 1.0,
+        "sum" : 1.0,
+        "count" : 1,
+        "last" : 1.0,
+        "max" : 1.0,
+        "min" : 1.0,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumSuccessfulResponses",
+      "values" : {
+        "count" : 1,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.request.content_size",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 1,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 0.016666666666666666
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "<HOSTNAME>",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "http.status.2xx",
+      "values" : {
+        "count" : 11,
+        "rate" : 0.18333333333333332
+      },
+      "dimensions" : {
+        "httpMethod" : "GET",
+        "requestType" : "monitoring",
+        "scheme" : "http"
+      }
+    }, {
+      "name" : "serverConnectionDurationMean",
+      "values" : {
+        "average" : 33132.36356551524,
+        "sum" : 993970.9069654571,
+        "count" : 30,
+        "last" : 33078.35027005401,
+        "max" : 33156.0945973087,
+        "min" : 33078.35027005401,
+        "rate" : 0.5
+      },
+      "dimensions" : {
+        "serverPort" : "4080",
+        "serverName" : "myserver"
+      }
+    }, {
+      "name" : "serverConnectionDurationMax",
+      "values" : {
+        "average" : 6803674.0,
+        "sum" : 2.0411022E8,
+        "count" : 30,
+        "last" : 6803674.0,
+        "max" : 6803674.0,
+        "min" : 6803674.0,
+        "rate" : 0.5
+      },
+      "dimensions" : {
+        "serverPort" : "4080",
+        "serverName" : "myserver"
+      }
+    }, {
+      "name" : "serverConnectionsOpenMax",
+      "values" : {
+        "average" : 46.0,
+        "sum" : 1380.0,
+        "count" : 30,
+        "last" : 46.0,
+        "max" : 46.0,
+        "min" : 46.0,
+        "rate" : 0.5
+      },
+      "dimensions" : {
+        "serverPort" : "4080",
+        "serverName" : "myserver"
+      }
+    }, {
+      "name" : "serverNumConnections",
+      "values" : {
+        "average" : 4978.3,
+        "sum" : 149349.0,
+        "count" : 30,
+        "last" : 5018.0,
+        "max" : 5018.0,
+        "min" : 4959.0,
+        "rate" : 0.5
+      },
+      "dimensions" : {
+        "serverPort" : "4080",
+        "serverName" : "myserver"
+      }
+    }, {
+      "name" : "serverNumOpenConnections",
+      "values" : {
+        "average" : 18.2,
+        "sum" : 546.0,
+        "count" : 30,
+        "last" : 19.0,
+        "max" : 19.0,
+        "min" : 17.0,
+        "rate" : 0.5
+      },
+      "dimensions" : {
+        "serverPort" : "4080",
+        "serverName" : "myserver"
+      }
+    }, {
+      "name" : "serverConnectionDurationStdDev",
+      "values" : {
+        "average" : 140536.13113155414,
+        "sum" : 4216083.933946624,
+        "count" : 30,
+        "last" : 140041.4454883584,
+        "max" : 140775.78280364512,
+        "min" : 140041.4454883584,
+        "rate" : 0.5
+      },
+      "dimensions" : {
+        "serverPort" : "4080",
+        "serverName" : "myserver"
+      }
+    }, {
+      "name" : "query_container_latency",
+      "values" : {
+        "average" : 0.08351101634683725,
+        "sum" : 2820.0,
+        "count" : 33768,
+        "last" : 0.0,
+        "max" : 17.0,
+        "min" : 0.0,
+        "rate" : 562.8
+      },
+      "dimensions" : {
+        "chain" : "<OurProductID>"
+      }
+    }, {
+      "name" : "handled.latency",
+      "values" : {
+        "average" : 169.0,
+        "sum" : 0.0,
+        "count" : 0,
+        "last" : 169.0,
+        "max" : 169.0,
+        "min" : 169.0,
+        "rate" : 0.0
+      },
+      "dimensions" : {
+        "handler" : "http://*:*/search/*",
+        "handler-name" : "com.yahoo.container.jdisc.ThreadedRequestHandler$RequestTask",
+        "endpoint" : "<HOSTNAME>:4080",
+        "scheme" : "http",
+        "port" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.filtering.response.unhandled",
+      "values" : {
+        "count" : 33776,
+        "rate" : 562.9333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumRequests",
+      "values" : {
+        "count" : 33776,
+        "rate" : 562.9333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverTimeToFirstByte",
+      "values" : {
+        "average" : 5.147108465843475,
+        "sum" : 173823.0,
+        "count" : 33771,
+        "last" : 5.0,
+        "max" : 35.0,
+        "min" : 0.0,
+        "rate" : 562.85
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverBytesSent",
+      "values" : {
+        "average" : 5198.357447261879,
+        "sum" : 3.41542481E8,
+        "count" : 65702,
+        "last" : 7715.0,
+        "max" : 8000.0,
+        "min" : 1.0,
+        "rate" : 1095.0333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.filtering.request.unhandled",
+      "values" : {
+        "count" : 33776,
+        "rate" : 562.9333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumSuccessfulResponseWrites",
+      "values" : {
+        "count" : 65702,
+        "rate" : 1095.0333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.request.uri_length",
+      "values" : {
+        "average" : 1056.6907863571766,
+        "sum" : 3.5690788E7,
+        "count" : 33776,
+        "last" : 2781.0,
+        "max" : 2781.0,
+        "min" : 12.0,
+        "rate" : 562.9333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverTotalSuccessfulResponseLatency",
+      "values" : {
+        "average" : 5.5328536318142785,
+        "sum" : 186850.0,
+        "count" : 33771,
+        "last" : 5.0,
+        "max" : 35.0,
+        "min" : 0.0,
+        "rate" : 562.85
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.requests",
+      "values" : {
+        "count" : 33776,
+        "rate" : 562.9333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "serverNumSuccessfulResponses",
+      "values" : {
+        "count" : 33771,
+        "rate" : 562.85
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "jdisc.http.request.content_size",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 33776,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 562.9333333333333
+      },
+      "dimensions" : {
+        "clientAuthenticated" : "false",
+        "serverName" : "myserver",
+        "httpMethod" : "GET",
+        "requestServerName" : "0.0.0.0",
+        "scheme" : "http",
+        "serverPort" : "4080"
+      }
+    }, {
+      "name" : "handled.requests",
+      "values" : {
+        "count" : 33768,
+        "rate" : 562.8
+      },
+      "dimensions" : {
+        "handler" : "http://*:*/search/*",
+        "handler-name" : "com.yahoo.search.handler.SearchHandler",
+        "endpoint" : "0.0.0.0:4080",
+        "scheme" : "http",
+        "port" : "4080"
+      }
+    }, {
+      "name" : "handled.requests",
+      "values" : {
+        "count" : 0,
+        "rate" : 0.0
+      },
+      "dimensions" : {
+        "handler" : "http://*:*/search/*",
+        "handler-name" : "com.yahoo.search.handler.SearchHandler",
+        "endpoint" : "<HOSTNAME>:4080",
+        "scheme" : "http",
+        "port" : "4080"
+      }
+    }, {
+      "name" : "serverActiveThreads",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 600,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 10.0
+      },
+      "dimensions" : {
+        "threadpool" : "default-pool"
+      }
+    }, {
+      "name" : "serverThreadPoolSize",
+      "values" : {
+        "average" : 500.0,
+        "sum" : 300000.0,
+        "count" : 600,
+        "last" : 500.0,
+        "max" : 500.0,
+        "min" : 500.0,
+        "rate" : 10.0
+      },
+      "dimensions" : {
+        "threadpool" : "default-pool"
+      }
+    }, {
+      "name" : "jdisc.thread_pool.work_queue.size",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 600,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 10.0
+      },
+      "dimensions" : {
+        "threadpool" : "default-pool"
+      }
+    }, {
+      "name" : "jdisc.thread_pool.work_queue.capacity",
+      "values" : {
+        "average" : 0.0,
+        "sum" : 0.0,
+        "count" : 600,
+        "last" : 0.0,
+        "max" : 0.0,
+        "min" : 0.0,
+        "rate" : 10.0
+      },
+      "dimensions" : {
+        "threadpool" : "default-pool"
+      }
+    }, {
+      "name" : "degraded_queries",
+      "values" : {
+        "count" : 208,
+        "rate" : 3.466666666666667
+      },
+      "dimensions" : {
+        "reason" : "timeout",
+        "chain" : "default"
+      }
+    } ]
+  }
+}
